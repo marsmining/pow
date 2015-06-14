@@ -1,0 +1,18 @@
+{
+  "name": "try-karma",
+  "version": "1.0.0",
+  "description": "work mama!",
+  "main": "karma.conf.js",
+  "repository": "na",
+  "author": "foo",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-closure-tools": "^0.9.9",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jscs": "^1.8.0",
+    "jit-grunt": "^0.9.1",
+    "karma": "^0.12.36",
+    "karma-closure": "^0.1.0",
+    "karma-closure-next": "^0.1.1"
+  }
+}
