@@ -1,4 +1,4 @@
-goog.require('main');
+goog.require('pow.main');
 
 /**
  * main

@@ -4,23 +4,23 @@ module.exports = function(config) {
         frameworks: ['jasmine', 'closure'],
         files: [
             // closure base
-            {pattern: 'lib/goog/base.js'},
+            {pattern: 'bower_components/google-closure-library/closure/goog/base.js'},
             // included files - tests
             {pattern: 'test/*.js'},
             // these are only watched and served
-            {pattern: 'js/*.js', included: false},
+            {pattern: 'src/*.js', included: false},
             // external deps
-            {pattern: 'lib/goog/deps.js', included: false, served: false},
-            {pattern: 'lib/goog/**/*.js', included: false}
+            {pattern: 'bower_components/google-closure-library/closure/goog/deps.js', included: false, served: false},
+            {pattern: 'bower_components/google-closure-library/closure/goog/**/*.js', included: false}
         ],
 
         preprocessors: {
             'test/*.js': ['closure', 'closure-iit'],
             'js/*.js': ['closure'],
-            'lib/goog/deps.js': ['closure-deps']
+            'bower_components/google-closure-library/closure/goog/deps.js': ['closure-deps']
         },
 
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         autoWatch: true
     });
 };
