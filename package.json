@@ -1,8 +1,8 @@
 {
-  "name": "try-karma",
+  "name": "pow",
   "version": "1.0.0",
-  "description": "work mama!",
-  "repository": "na",
+  "description": "sample project using google closure, grunt and karma",
+  "repository": "https://github.com/marsmining/pow",
   "author": "foo",
   "license": "ISC",
   "devDependencies": {
