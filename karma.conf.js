@@ -10,13 +10,13 @@ module.exports = function(config) {
             // these are only watched and served
             {pattern: 'src/*.js', included: false},
             // external deps
-            {pattern: 'bower_components/google-closure-library/closure/goog/deps.js', included: false, served: false},
-            {pattern: 'bower_components/google-closure-library/closure/goog/**/*.js', included: false}
+            {pattern: 'bower_components/google-closure-library/closure/goog/deps.js', included: false, served: false}
+            // {pattern: 'bower_components/google-closure-library/closure/goog/**/*.js', included: false}
         ],
 
         preprocessors: {
             'test/*.js': ['closure', 'closure-iit'],
-            'js/*.js': ['closure'],
+            'src/*.js': ['closure'],
             'bower_components/google-closure-library/closure/goog/deps.js': ['closure-deps']
         },
 

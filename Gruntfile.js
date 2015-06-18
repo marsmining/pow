@@ -21,10 +21,6 @@ module.exports = function(grunt) {
         jscs: {
             src: allFiles
         },
-        clean: {
-            dist: ['dist'],
-            test: ['reports']
-        },
         connect: {
             server: {
                 options: {
